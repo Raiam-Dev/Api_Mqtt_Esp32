@@ -1,0 +1,6 @@
+@Mqtt_Api_Esp32_HostAddress = http://localhost:5113
+
+GET {{Mqtt_Api_Esp32_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
