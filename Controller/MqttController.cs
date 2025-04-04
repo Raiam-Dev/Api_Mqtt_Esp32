@@ -28,10 +28,14 @@ namespace Mqtt_Api_Esp32.Controller
                 if(retorno == true){return Ok(new {sucess=true});}
                 else{return Ok(new { sucess = true });}
             }
-            else 
-            {
-                return NotFound("Error Json invalido");
-            }
+            else {return NotFound("Error Json invalido");}
+        }
+        [Route("comando-dispositivo")]
+        [HttpPost]
+        public async Task<IActionResult> Comando() 
+        {
+
+            return null!;
         }
     }
 }
